@@ -1,0 +1,794 @@
+/* PRODUCT CATALOG WEB PAGE CONTENTS -------------------------------------------------------------- */
+/* CSS styles for the second-PRODUCT CATALOG webpage */
+/* Styles for Jovy's Scholar Station*/
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Applying transition to all three webpages */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Example of fading in/out effect */
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+	background-color: #6A4018; 
+}
+
+
+/* Top container styles */
+.top-container {
+    position: relative; 
+    padding: 20px; 
+    text-align: center; 
+    flex: 1; 
+    background-image: url('Home/home_images/map_bg.jpg');
+	background-size: cover;
+    background-attachment: fixed; 
+	background-position: center top; 
+}
+
+
+/* Navigation Container */
+.nav-container {
+	background-color: rgba(155, 100, 67, 0.7); 
+    padding: 0px; 
+    margin-top: 20px;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: orange; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+/* Navigation links */
+.nav-links {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual navigation list item */
+.nav-links li {
+    display: inline-block; 
+    position: relative; 
+}
+
+/* Styling for navigation links */
+.nav-links li a {
+    font-family: 'Merriweather', serif;
+    font-weight: bold; 
+    display: inline-block;
+    color: #FFEBDF; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+    margin-right: 10px; 
+}
+
+/* Styling for hover effect on navigation links */
+.nav-links li a:hover {
+    background-color: rgba(132, 54, 3, 0.5); 
+    color: #fff; 
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+	width: 100%; 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #BB764D; 
+    min-width: 160px; 
+    z-index: 1; 
+}
+
+/* Ensure full width and padding for dropdown menu items */
+.dropdown-menu li {
+    box-sizing: border-box; 
+}
+
+/* Show dropdown menu on hover */
+.nav-links li:hover .dropdown-menu {
+    display: block; 
+}
+
+/* Styling for dropdown menu items */
+.dropdown-menu li {
+	width: 100%; 
+    display: block;
+}
+
+/* Styling for dropdown menu links */
+.dropdown-menu li a {
+	width: 100%; 
+    color: #333; 
+    padding: 12px 12px; 
+    display: block;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; 
+}
+
+/* Styling for hover effect on dropdown menu links */
+.dropdown-menu li a:hover {
+	width: 100%; 
+    background-color: rgba(217, 136, 87, 0.8); 
+    color: #fff; 
+}
+
+/* Content styles */
+.content {
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+}
+
+/* Title and tagline styles */
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 50px; 
+    font-weight: bold;
+    color: #FFD4B2;
+    margin-top: 0px;
+}
+
+.tagline {
+    font-family: 'Merriweather', serif;
+    font-size: 25px; 
+    font-weight: bold;
+    color: #FFE3CC;
+    margin-top: 12px;
+}
+
+/* Top container Logos */
+.main-logo {
+    width: 100px;
+    height: auto;
+	margin: 5px;
+}
+
+/* Navigation logos */
+.logo {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+}
+
+/* Custom styling for top horizontal rule */
+.top-hr {
+    border: none; 
+    height: 1px; 
+    background-color: #F6AD55;
+    margin-top: 12px; 
+    margin-bottom: 18px; 
+    width: 86%; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto;
+    position: relative; 
+}
+
+/* Custom styling for hr line */
+.top-hr::after {
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    width: 20px; 
+    height: 1px; 
+    background-color: #F49531; 
+    left: calc(100% + 10px); 
+}
+
+/* Custom styling for top2 horizontal rule */
+.top2-hr {
+    border: none; 
+    height: 2px; 
+    background-color: #F6AD55; 
+    margin-top: 18px; 
+    margin-bottom: 18px; 
+    width: calc(100% - 0px); 
+    max-width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+/* Bottom container styles */
+.bottom-container {
+    background-image: url('bottom_background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+    flex: 1; 
+	justify-content: space-between; 
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+/* Styling for section header design */
+.section-header-design {
+    background-color: #B05925;
+    padding: 20px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* Section header styles */
+.section-header {
+    font-family: 'Merriweather', serif;
+    font-size: 28px; 
+    font-weight: 600; 
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 0px; 
+}
+
+/* Styling for section header design 2 */
+.section-header-design2 {
+    background-color: #B05925; 
+    padding: 5px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* Section header styles */
+.section-header2 {
+    font-family: 'Merriweather', serif;
+    font-size: 28px; 
+    font-weight: 600; 
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 0px; 
+}
+
+.section-hr {
+    border: none; 
+    border-top: 2px solid #fff;
+    margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* WELCOME PRODUCT SECTION */
+/* Three-column layout */
+.three-column-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* Column styles */
+.column {
+    flex: 1; 
+    text-align: center;
+    flex-direction: column;
+}
+
+.middle-column {
+    flex: 2; 
+    text-align: justify;
+    background-color: #984717;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Image styles */
+.column img {
+    width: 100%; 
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Text container styles */
+.welcome-product-catalog {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    padding: 20px;
+    background-color: #4f270f; 
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+/* CSS for the Book Station Section */
+/* Container for the featured books content */
+.section1-background {
+    padding-top: 50px;
+    background-image: url('Products/product_images/wallpaper2.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.featured-books-container {
+	font-family: 'Merriweather', serif;
+    padding: 20px;
+    background-color: #984717;
+	color: #fff;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Styles for the "claimed-ticket" design */
+.claimed-ticket {
+	text-align: center;
+    background-color: #9D552A;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	margin-right: 80px;
+	margin-left: 80px;
+	display: block;
+    margin: 20px auto;
+    text-align: center;
+	margin-top: 5px;
+	max-width: 800px; 
+    width: 100%; 
+}
+
+.claimed-ticket p {
+	font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Style for the book grid container */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(9, 1fr); 
+    gap: 30px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+/* Style for each book item */
+.book {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Style for the book title */
+.book-title {
+    font-size: 21px; 
+    font-weight: bold;
+    text-decoration: underline; 
+    margin-bottom: 20px; 
+    color: #000; 
+}
+
+/* Style for the book price */
+.book-price {
+    font-size: 16px;
+    font-weight: bold; 
+    color: #5D2E0D; 
+}
+
+/* Style for the book description */
+.book-description {
+    font-size: 15px;
+    color: #000; 
+    margin-top: 22px;
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px; 
+    object-fit: cover;
+    border: 2px solid #ebb190; 
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* Book details overlay */
+.book-details {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 189, 143, 0.92);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hover effect to reveal book details on hover */
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book:hover img {
+    transform: scale(1.1);
+    border-color: #aaa; 
+}
+
+.book:hover .book-details {
+    opacity: 1;
+}
+
+/* Image Styles */
+/* Row Container Styles */
+.row-container {
+    display: flex; 
+}
+
+/* Image Container Styles */
+.image-container {
+    max-width: 100%; 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; 
+}
+
+
+/* CSS for the Supply Station Section */
+/* Container for the featured books content */
+.section2-background {
+    padding-top: 50px;
+    background-image: url('Products/product_images/wallpaper4.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.featured-supply-container {
+	font-family: 'Merriweather', serif;
+    padding: 20px;
+    background-color: #984717; 
+	color: #fff;
+	text-align: justify;
+	line-height: 1.6;
+}
+
+/* Styles for the "claimed-ticket" design */
+.claimed-ticket {
+	text-align: center;
+    background-color: #9D552A;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+	margin-right: 80px;
+	margin-left: 80px;
+	display: block;
+    margin: 20px auto;
+    text-align: center;
+	margin-top: 5px;
+	max-width: 800px;
+    width: 100%;
+}
+
+.claimed-ticket p {
+	font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Style for the book grid container */
+.supply-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(9, 1fr); 
+    gap: 30px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+/* Style for each supply item */
+.supply {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Style for the supply title */
+.supply-title {
+    font-size: 21px; 
+    font-weight: bold;
+    text-decoration: underline; 
+    margin-bottom: 20px; 
+    color: #000; 
+}
+
+/* Style for the supply price */
+.supply-price {
+    font-size: 18px;
+    font-weight: bold; 
+    color: #5D2E0D; 
+    margin-bottom: 25px;
+}
+
+/* Style for the supply list */
+.supply-features-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for list items in the supply details */
+.supply-features-list li {
+    list-style-type: none;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.supply img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px; 
+    object-fit: cover;
+    border: 2px solid #ebb190; 
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+/* Supply details overlay */
+.supply-details {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 189, 143, 0.95);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hover effect to reveal supply details on hover */
+.supply:hover {
+    transform: translateY(-5px);
+}
+
+.supply:hover img {
+    transform: scale(1.1);
+    border-color: #aaa;
+}
+
+.supply:hover .supply-details {
+    opacity: 1;
+}
+
+/* Closing Images Container */
+.closing-images-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+/* Closing Image */
+.closing-image {
+    flex-basis: 50%; 
+    max-width: 50%; 
+}
+
+.closing-image img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Orange horizontal rule */
+.orange-hr {
+	border: none; 
+	border-top: 2px solid #F57429;
+	margin-top: 45px; 
+	margin-bottom: 20px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999;
+}
+
+.back-to-top a {
+    display: inline-block; 
+    width: 50px;
+    height: 50px; 
+    line-height: 50px; 
+    text-align: center; 
+    background-color: #FFA500; 
+    color: #fff; 
+    font-size: 14px; 
+    text-decoration: none; 
+    border-radius: 50%; 
+}
+
+.back-to-top a:hover {
+    background-color: #FF7F00; 
+}
+
+
+/* Footer Section */
+footer {
+    font-family: 'Merriweather', serif;
+    background-color: #6A4018;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Follow Us Content */
+.follow-us {
+    margin-bottom: 20px; 
+}
+
+.follow-us h3 {
+    color: #FAD095;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.follow-us p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Social Media Links */
+.social-media-links {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+    gap: 25px; 
+}
+
+.social-media-links a {
+    display: inline-block; 
+}
+
+.social-media-links img {
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 15px; 
+}
+
+/* Additional Links */
+.footer-links h3 {
+    color: #FAD095;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    color: #fff;
+    display: inline;
+    margin-right: 30px;
+}
+
+/* Define the color for all anchor tags within .footer-links */
+.footer-links a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Company Information */
+.company-info {
+    font-size: 12px;
+    margin-bottom: 20px; 
+}
+
+.company-info h3 {
+    color: #FAD095;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Style for social media and quick links */
+.footer-links a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Hover styles for links */
+.footer-links a:hover {
+    color: #FB843F;
+}
+
+/* Style for social media links container */
+.social-media-links {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+/* Style for individual social media link image */
+.social-media-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease; 
+}
+
+/* Apply color overlay on hover */
+.social-media-links a:hover img {
+    filter: brightness(0%);
+    transition: filter 0.3s ease;
+}
+
+/* Copyright Notice */
+.copyright-notice {
+    color: #FCC8AA;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px; 
+    font-size: 12px;
+}
+
+
+
+
+

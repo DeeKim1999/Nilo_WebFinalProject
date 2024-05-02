@@ -1,0 +1,852 @@
+/* CONTACT US WEB PAGE CONTENTS -------------------------------------------------------------- */
+/* CSS styles for the fifth-CONTACT US webpage */
+/* Styles for Jovy's Scholar Station*/
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; 
+}
+
+/* Applying transition to all three webpages */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Example of fading in/out effect */
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+/* Container styles */
+.container {
+    width: 100%; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+	background-color: #6A4018; 
+}
+
+
+/* Top container styles */
+.top-container {
+    position: relative; 
+    padding: 20px; 
+    text-align: center; 
+    flex: 1; 
+    background-image: url('Home/home_images/map_bg.jpg');
+	background-size: cover;
+    background-attachment: fixed; 
+	background-position: center top;
+}
+
+
+/* Navigation Container */
+.nav-container {
+	background-color: rgba(155, 100, 67, 0.7); 
+    padding: 0px; 
+    margin-top: 20px;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: orange; 
+    overflow: hidden; 
+    text-align: center; 
+}
+
+/* Navigation links */
+.nav-links {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual navigation list item */
+.nav-links li {
+    display: inline-block; 
+    position: relative; 
+}
+
+/* Styling for navigation links */
+.nav-links li a {
+    font-family: 'Merriweather', serif;
+    font-weight: bold; 
+    display: inline-block;
+    color: #FFEBDF; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+    margin-right: 10px; 
+}
+
+/* Styling for hover effect on navigation links */
+.nav-links li a:hover {
+    background-color: rgba(132, 54, 3, 0.5); 
+    color: #fff;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+	width: 100%;
+    display: none;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    background-color: #BB764D; 
+    min-width: 160px; 
+    z-index: 1; 
+}
+
+/* Ensure full width and padding for dropdown menu items */
+.dropdown-menu li {
+    box-sizing: border-box;
+}
+
+/* Show dropdown menu on hover */
+.nav-links li:hover .dropdown-menu {
+    display: block; 
+}
+
+/* Styling for dropdown menu items */
+.dropdown-menu li {
+	width: 100%; 
+    display: block;
+}
+
+/* Styling for dropdown menu links */
+.dropdown-menu li a {
+	width: 100%;
+    color: #333; 
+    padding: 12px 12px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+/* Styling for hover effect on dropdown menu links */
+.dropdown-menu li a:hover {
+	width: 100%; 
+    background-color: rgba(217, 136, 87, 0.8);
+    color: #fff; 
+}
+
+/* Content styles */
+.content {
+    position: relative; 
+    z-index: 1; 
+    color: white;
+}
+
+/* Title and tagline styles */
+.title {
+    font-family: 'Merriweather', serif;
+    font-size: 50px; 
+    font-weight: bold;
+    color: #FFD4B2;
+    margin-top: 0px;
+}
+
+.tagline {
+    font-family: 'Merriweather', serif;
+    font-size: 25px; 
+    font-weight: bold;
+    color: #FFE3CC;
+    margin-top: 12px;
+}
+
+/* Top container Logos */
+.main-logo {
+    width: 100px;
+    height: auto;
+	margin: 5px;
+}
+
+/* Navigation logos */
+.logo {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+}
+
+/* Custom styling for top horizontal rule */
+.top-hr {
+    border: none; 
+    height: 1px; 
+    background-color: #F6AD55;
+    margin-top: 12px; 
+    margin-bottom: 18px; 
+    width: 86%; 
+    max-width: 800px;
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative; 
+}
+
+/* Custom styling for hr line */
+.top-hr::after {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    width: 20px; 
+    height: 1px; 
+    background-color: #F49531; 
+    left: calc(100% + 10px); 
+}
+
+/* Custom styling for top2 horizontal rule */
+.top2-hr {
+    border: none; 
+    height: 2px; 
+    background-color: #F6AD55; 
+    margin-top: 18px; 
+    margin-bottom: 18px; 
+    width: calc(100% - 0px); 
+    max-width: 100%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+/* Bottom container styles */
+.bottom-container {
+    background-image: url('bottom_background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
+    flex: 1; 
+	justify-content: space-between; 
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px; 
+}
+
+/* Styling for section header design */
+.section-header-design {
+    background-color: #B05925; 
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+/* Section header styles */
+.section-header {
+    font-family: 'Merriweather', serif;
+    font-size: 28px; 
+    font-weight: 600; 
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 0px; 
+}
+
+/* Styling for section header design 2 */
+.section-header-design2 {
+    background-color: #B05925;
+    padding: 5px;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+/* Section header styles */
+.section-header2 {
+    font-family: 'Merriweather', serif;
+    font-size: 28px; 
+    font-weight: 600; 
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 0px; 
+}
+
+.section-hr {
+    border: none; 
+    border-top: 2px solid #fff;
+    margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* WELCOME CONTACT US SECTION */
+/* Three-column layout */
+.three-column-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* Column styles */
+.column {
+    flex: 1; 
+    text-align: center;
+    flex-direction: column;
+}
+
+.middle-column {
+    flex: 2; 
+    text-align: justify;
+    background-color: #984717;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Image styles */
+.column img {
+    width: 100%; 
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Text container styles */
+.welcome-product-catalog {
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    padding: 20px;
+    background-color: #4f270f; 
+    border-radius: 8px;
+    flex-grow: 1;
+    margin-bottom: 0px;
+}
+
+/* Button Styles */
+.contact-us-button {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin-top: 40px;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.contact-us-button .button {
+    padding: 10px 20px;
+    background-color: #cd6c1d;
+    color: white;
+    border: 3px solid #85431d;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.contact-us-button .button:hover {
+    background-color: #868e87;
+}
+
+
+/* CSS for the CONTACT US - Contact Form Section */
+.section1-background {
+    padding-top: 30px;
+    background-image: url('Blog/blog_images/wood_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+
+/* Contact Form Container */
+.contact-form-container {
+    font-family: 'Merriweather', serif;
+    height: 100%;
+    padding: 30px 10px; 
+    display: flex; 
+    align-items: stretch; 
+}
+
+/* Contact Form Row */
+.contact-form-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; 
+}
+
+/* Contact Form Image Left, Contact Form Content, and Contact Form Image Right */
+.contact-form-image-left,
+.contact-form-content,
+.contact-form-image-right {
+    flex: 1;
+    display: flex; 
+    align-items: stretch; 
+    justify-content: center; 
+    margin: 0 10px; 
+    border: 2px solid #400f0f;
+}
+
+/* Contact Form Image Left and Right */
+.contact-form-image-left img,
+.contact-form-image-right img {
+    width: auto;
+    height: 100%; 
+    max-width: 100%; 
+    object-fit: cover; 
+}
+
+/* Contact Form Content */
+.contact-form-content {
+    flex: 2; 
+    padding: 20px;
+    background-color: #5b3e32; 
+    border: 2px solid #400f0f;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 10px; 
+}
+
+/* Contact Form Title */
+.contact-form-content h3 {
+    color: #ccc;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+/* Contact Form Label */
+.contact-form-content label {
+    margin-bottom: 10px; 
+    font-weight: bold; 
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Contact Form Input Fields */
+.contact-form-content input[type="text"],
+.contact-form-content input[type="tel"],
+.contact-form-content input[type="date"],
+.contact-form-content input[type="email"],
+.contact-form-content select,
+.contact-form-content textarea {
+    font-family: 'Merriweather', serif;
+    width: 100%; 
+    margin-top: 10px;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #786158;
+    color: #fff;
+}
+
+/* Contact Form Textarea */
+.contact-form-content textarea {
+    font-family: 'Merriweather', serif;
+    resize: none; 
+    background-color: #786158;
+}
+
+/* Contact Form Select */
+.contact-form-content select {
+    cursor: pointer;
+}
+
+/* Submit and Reset Buttons Container */
+.submit-reset-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+}
+
+/* Contact Form Submit Button */
+.contact-form-content input[type="submit"] {
+    max-width: 500px; 
+    padding: 12px 40px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Contact Form Submit Button Hover Effect */
+.contact-form-content input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+/* Contact Form Reset Button */
+.contact-form-content input[type="reset"] {
+    max-width: 500px; 
+    padding: 12px 40px; 
+    background-color: #f44336; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Contact Form Reset Button Hover Effect */
+.contact-form-content input[type="reset"]:hover {
+    background-color: #d32f2f; 
+}
+
+
+/* Website Rating Container */
+.website-rating-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+/* Rating Container */
+.rating-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.star {
+    font-size: 24px; 
+    cursor: pointer; 
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+/* Style for selected stars */
+.star.selected {
+    color: gold; 
+}
+
+/* Website Rating Label */
+.website-rating-container label {
+    margin-bottom: 10px;
+}
+
+/* Rating Stars */
+.rating-container .star {
+    margin-right: 10px;
+}
+
+
+
+/* CSS for the ABOUT US - Our Location Section */
+.section5-background {
+    padding-top: 30px;
+    background-image: url('ContactUs/contact_images/map_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+
+.our-location-content-container {
+    font-family: 'Merriweather', serif;
+    padding: 30px 20px;
+}
+
+/* Team Introduction */
+.location-introduction {
+    color: #ddd9d9;
+    border: 2px solid #451a02; 
+    background-color: #4f2311; 
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase; 
+    text-indent: 20px;
+}
+
+/* Team Closing */
+.location-closing {
+    color: #ddd9d9;
+    border: 2px solid #451a02; 
+    background-color: #4f2311; 
+    padding: 15px 20px;
+    line-height: 2;
+    text-align: center;
+    text-transform: uppercase; 
+    text-indent: 20px;
+}
+
+/* Location Container */
+.location-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: stretch; 
+    height: 400px; 
+}
+
+/* Location Details */
+.location-details {
+    flex: 1; 
+    margin-right: 18px; 
+    padding: 20px; 
+    color: #ddd9d9;
+    border: 3px solid #451a02; 
+    background-color: #782705; 
+}
+
+.location-details h3 {
+    margin-top: 0; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Location HR */
+.location-hr {
+    border: none;
+    height: 2px;
+    background-color: #a38585; 
+    margin: 10px auto; 
+}
+
+.location-details ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.location-details ul li {
+    margin-top: 15px;
+    margin-left: 22px;
+    margin-bottom: 0px; 
+    line-height: 2.3;
+}
+
+/* Embedded Google Map */
+.google-map {
+    width: 50%; 
+    border: 3px solid #451a02; 
+}
+
+/* Iframe within Google Map */
+.google-map iframe {
+    width: 100%;
+    height: 100%; 
+}
+
+
+/* Closing Images Container */
+.closing-images-container {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px;
+}
+
+/* Closing Image */
+.closing-image {
+    flex-basis: 50%; 
+    max-width: 50%; 
+}
+
+.closing-image img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+
+
+/* Horizontal Rule Styles */
+.section-divider1 {
+    border: none; 
+    height: 2px;
+    background-color: #85431d; 
+    margin: 30px 20px;
+}
+
+/* Container for the 2nd section content */
+.section2-background {
+    padding-top: 50px;
+    background-image: url('Blog/blog_images/wallpaper5.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+/* Horizontal Rule Styles */
+.section-divider2 {
+    border: none; 
+    height: 2px; 
+    background-color: #85431d; 
+    margin: 30px 400px;
+}
+
+
+/* Orange horizontal rule */
+.orange-hr {
+	border: none; 
+	border-top: 2px solid #b94c0e; 
+	margin-top: 45px; 
+	margin-bottom: 20px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999;
+}
+
+.back-to-top a {
+    display: inline-block; 
+    width: 50px; 
+    height: 50px; 
+    line-height: 50px; 
+    text-align: center; 
+    background-color: #FFA500; 
+    color: #fff; 
+    font-size: 14px; 
+    text-decoration: none; 
+    border-radius: 50%; 
+}
+
+.back-to-top a:hover {
+    background-color: #FF7F00; 
+}
+
+
+/* Footer Section */
+footer {
+    font-family: 'Merriweather', serif;
+    background-color: #6A4018;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Follow Us Content */
+.follow-us {
+    margin-bottom: 20px; 
+}
+
+.follow-us h3 {
+    color: #FAD095;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.follow-us p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Social Media Links */
+.social-media-links {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+    gap: 25px; 
+}
+
+.social-media-links a {
+    display: inline-block; 
+}
+
+.social-media-links img {
+    width: 30px; 
+    height: 30px;
+    margin-bottom: 15px; 
+}
+
+/* Additional Links */
+.footer-links h3 {
+    color: #FAD095;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    color: #fff;
+    display: inline;
+    margin-right: 30px;
+}
+
+/* Define the color for all anchor tags within .footer-links */
+.footer-links a {
+    color: #fff; 
+    font-size: 14px;
+}
+
+/* Company Information */
+.company-info {
+    font-size: 12px;
+    margin-bottom: 20px; 
+}
+
+.company-info h3 {
+    color: #FAD095;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Style for social media and quick links */
+.footer-links a {
+    color: #fff; 
+    transition: color 0.3s ease; 
+}
+
+/* Hover styles for links */
+.footer-links a:hover {
+    color: #FB843F; 
+}
+
+/* Style for social media links container */
+.social-media-links {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+/* Style for individual social media link image */
+.social-media-links a {
+    display: inline-block;
+    margin: 0 10px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Apply color overlay on hover */
+.social-media-links a:hover img {
+    filter: brightness(0%);
+    transition: filter 0.3s ease;
+}
+
+/* Copyright Notice */
+.copyright-notice {
+    color: #FCC8AA;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px; 
+    font-size: 12px;
+}
+
+
+
+
